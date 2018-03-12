@@ -44,6 +44,14 @@
       text-align: center;
 
     }
+    .allowscroll{
+      overflow-y: auto;
+      height: 300px;
+    }
+    #notif.dropdown-menu>li>a{
+      white-space: normal;
+
+    }
   </style>
   <body>
     <!-- Fixed navbar -->
@@ -81,10 +89,19 @@
                 <i class="fa fa-plus"></i>
                 </a>
             </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-bell"><span class="badge">4</span></i>
-                </a>
+            <li class="dropdown ddalignright">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"><span class="badge">4</span></i></a>
+              <ul class="dropdown-menu allowscroll" id="notif">
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></li>
+
+
+              </ul>
             </li>
            
           </ul>
@@ -107,7 +124,7 @@
                 prefered time of answerinf 14:30
               </p>
               <p>
-                <a href="#" class="btn btn-default" role="button" id="expert1">Button</a>
+                <a href="#" class="btn btn-default" role="button" id="expert1">Ask</a>
               </p>
             </div>
           </div>
@@ -121,7 +138,7 @@
                 prefered time of answerinf 14:30
               </p>
               <p>
-                <a href="#" class="btn btn-default" role="button" id="expert2">Button</a>
+                <a href="#" class="btn btn-default" role="button" id="expert2">Ask</a>
               </p>
             </div>
           </div>
@@ -134,7 +151,7 @@
                 prefered time of answerinf 14:30
               </p>
               <p>
-                <a href="#" class="btn btn-default" role="button" id="expert3">Button</a>
+                <a href="#" class="btn btn-default" role="button" id="expert3">Ask</a>
               </p>
             </div>
           </div>
@@ -150,7 +167,7 @@
                 prefered time of answerinf 14:30
               </p>
               <p>
-                <a href="#" class="btn btn-default" role="button" id="expert4">Button</a>
+                <a href="#" class="btn btn-default" role="button" id="expert4">Ask</a>
               </p>
             </div>
           </div>
@@ -163,7 +180,7 @@
                 prefered time of answerinf 14:30
               </p>
               <p>
-                <a href="#" class="btn btn-default" role="button" id="expert5">Button</a>
+                <a href="#" class="btn btn-default" role="button" id="expert5">Ask</a>
               </p>
             </div>
           </div>
@@ -176,7 +193,7 @@
                 prefered time of answerinf 14:30
               </p>
               <p>
-                <a href="#" class="btn btn-default" role="button" id="expert6">Button</a>
+                <a href="#" class="btn btn-default" role="button" id="expert6">Ask</a>
               </p>
             </div>
           </div>
@@ -186,7 +203,7 @@
       <center>
         <!-- Remove a href, just for redirection purpose-->
         <a href="../View_question/index.html">
-          <button type="submit" class="btn btn-primary" id="submit"> Submit Question </button>
+          <button type="submit" class="btn btn-primary" id="submit"> Ask Question </button>
         </a>
       </center>
 

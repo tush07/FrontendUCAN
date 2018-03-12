@@ -43,6 +43,14 @@
     .aligncenter{
       text-align: center;
     }
+    .allowscroll{
+      overflow-y: auto;
+      height: 300px;
+    }
+    #notif.dropdown-menu>li>a{
+      white-space: normal;
+
+    }
   </style>
   <body>
     <!-- Fixed navbar -->
@@ -80,23 +88,20 @@
                 <i class="fa fa-plus"></i>
                 </a>
             </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-bell"><span class="badge">4</span></i>
-                </a>
+             <li class="dropdown ddalignright">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"><span class="badge">4</span></i></a>
+                  <ul class="dropdown-menu allowscroll" id="notif">
+                    <li><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></li>
+
+
+                  </ul>
             </li>
-            <!--<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>-->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -186,8 +191,15 @@
         </div>
 
        </div>
-
-     
+       <div class="page-header aligncenter">
+          <h4>Your Answer</h4>
+      </div>
+      <textarea class="form-control" rows="4" placeholder="Answer"></textarea>
+      <br>
+      <center>
+        <button type="submit" class="btn btn-primary" id="submit"> Submit Answer </button>
+      </center>
+      
         
       
     </div> <!-- /container -->
